@@ -25,12 +25,12 @@
 class Config(object):
 
     # get a token from @BotFather
-    BOT_TOKEN = ""
-
+    BOT_TOKEN = "5622705373:AAFr6ZhUOoan1DFnRVu1ZuOuck594Zo5Z58"
+    
     # Get these values from my.telegram.org
-    API_ID = 1234567
-    API_HASH = ""
-
+    API_ID = 23883349
+    API_HASH = "9ae2939989ed439ab91419d66b61a4a4"
+    
     # No need to change
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     ADL_BOT_RQ = {}
@@ -38,13 +38,13 @@ class Config(object):
     TG_MAX_FILE_SIZE = 4194304000
     HTTP_PROXY = ""
     PROCESS_MAX_TIMEOUT = 3700
-
+    
     # TG Ids
-    LOG_CHANNEL = -1007119867241
-    OWNER_ID = 1288398723
-
+    LOG_CHANNEL = -1001798969594
+    OWNER_ID = 5429071679
+    
     # bot username without @
-    BOT_USERNAME = "AdvanceUrlUploaderBot"
-
+    BOT_USERNAME = "justrrybot"
+    
     # auth users
-    AUTH_USERS = [OWNER_ID]
+    AUTH_USERS = [OWNER_ID, 5429071679]
