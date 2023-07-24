@@ -33,40 +33,28 @@ logging.basicConfig(
 
 
 class Config(object):
-    WEBHOOK = os.environ.get("BOT_TOKEN", False)
-    # Get a token from @BotFather
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5622705373:AAFr6ZhUOoan1DFnRVu1ZuOuck594Zo5Z58")
-    # The Telegram API things
-    API_ID = int(os.environ.get("API_ID", 23883349))
-    API_HASH = os.environ.get("API_HASH", "9ae2939989ed439ab91419d66b61a4a4")
+
+    # get a token from @BotFather
+    BOT_TOKEN = "5622705373:AAFr6ZhUOoan1DFnRVu1ZuOuck594Zo5Z58"
+    
     # Get these values from my.telegram.org
-    # Array to store users who are authorized to use the bot
-
-    # File /video download location
+    API_ID = 23883349
+    API_HASH = "9ae2939989ed439ab91419d66b61a4a4"
+    
+    # No need to change
     DOWNLOAD_LOCATION = "./DOWNLOADS"
-
-    MEGA_EMAIL = os.environ.get("MEGA_EMAIL", "None")
-    # If deploying on vps edit the above value as example := Mega_email = "Your-Mega_email-inside-inverted-commas."
-
-    # This is not necessary! Enter your mega password only if you have a mega.nz account with pro/business features.
-    MEGA_PASSWORD = os.environ.get("MEGA_PASSWORD", "None")
-    # If deploying on vps edit the above value as example := Mega_password = "Your-Mega_password-inside-inverted-commas."
-    # Telegram maximum file upload size
-    TG_MAX_FILE_SIZE = 4194304000
-
-    # Chunk size that should be used with requests
-    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
-    # Proxy for accessing youtube-dl in GeoRestricted Areas
-    # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
-    HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
-
-    # Set timeout for subprcess
-    PROCESS_MAX_TIMEOUT = 3700
-
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -100))
-    OWNER_ID = int(os.environ.get("OWNER_ID", "5429071679"))
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "justrrybot")
     ADL_BOT_RQ = {}
-    AUTH_USERS = list({int(x)
-                      for x in os.environ.get("AUTH_USERS", "0").split()})
-    AUTH_USERS.append(OWNER_ID)
+    CHUNK_SIZE = 128
+    TG_MAX_FILE_SIZE = 4194304000
+    HTTP_PROXY = ""
+    PROCESS_MAX_TIMEOUT = 3700
+    
+    # TG Ids
+    LOG_CHANNEL = -1001798969594
+    OWNER_ID = 5429071679
+    
+    # bot username without @
+    BOT_USERNAME = "justrrybot"
+    
+    # auth users
+    AUTH_USERS = [OWNER_ID, 5429071679]
